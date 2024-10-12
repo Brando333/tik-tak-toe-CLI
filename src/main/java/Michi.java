@@ -2,11 +2,6 @@ public class Michi {
 
     private final int[][] grid = new int[3][3];
 
-
-    public Michi() {
-
-    }
-
     public void setMove(PlayerFlag playerFlag, int x, int y) throws CellIsNotEmptyException {
         if (isEmpty(x, y))
             grid[x][y] = playerFlag.getValue();
